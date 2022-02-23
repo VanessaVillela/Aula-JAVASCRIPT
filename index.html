@@ -6,8 +6,21 @@
         <script type="text/javascript" src="js/main.js"></script>
     </head>
 
-    <body>
+    <body onload="load()">
         <p>MInha pagina</p>
+        <button type="button" onclick="botao()">CLIQUE AQUI</button>
+        <p id="agradecimento" onclick="redirecionar()"></p>
+        <p id="mousemove" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mause aqui</p>
+        <p id="mousemove2" onmouseover="trocar(this)" onmouseout="voltar(this)">Passe o mause aqui</p>
+
+        <select onchange="funcaoChange(this)">
+
+            <option value="1">Valor 1</option>
+            <option value="1">Valor 2</option>
+            <option value="3">Valor 3</option>
+
+        </select>
+
         <!--JavaScrip inline-->
         <!--Alerta em página-->
        <!-- <script>

@@ -77,3 +77,61 @@ alert(d.getMonth()+1);
 alert(d.getMinutes());
 alert(d.getDay());
 alert(d.getHours());
+
+
+//-------------------------------------------------------------------------------------------
+
+function soma(n1, n2){
+    return n1 + n2;
+}
+
+function setReplace(frase, nome, novo_nome){
+    return frase.replace(nome, novo_nome)
+}
+
+function validaIdade(idade){
+    var validar;
+    if (idade>=18){
+        validar = true
+    }else{
+        validar = false
+    }
+    return validar;
+}
+
+var idade = prompt("Qual sua idade?");
+console.log(validaIdade(idade));
+
+alert(soma(5, 10));
+alert(setReplace("Vai Japão", "Japão", "Brasil"));
+
+//-------------------------------------------------------------------------------------------------
+
+function botao(){
+    //alert("obrigada por clicar");
+    document.getElementById("agradecimento").innerHTML = "Obrigada por clicar esc."; // inmerhtml injeto html no js
+}
+
+function redirecionar(){
+    //window.open("http://vanessavillela.com.br/");
+    window.location.href = "http://vanessavillela.com.br/";
+}
+
+function trocar(elemento){
+    //document.getElementById("mousemove"). innerHTML = "Obrigada por testar o mouse";
+   // alert("trocar texto");
+   elemento.innerHTML = "Obrigada por testar o mouse";
+}
+
+function voltar(elemento){
+    //document.getElementById("mousemove"). innerHTML = "Passe o mouse aqui";
+    elemento.innerHTML = "Passe o Mouse aqui";
+}
+
+function load(){
+    alert("pagina carregada");
+}
+
+function funcaoChange(elemento){
+    console.log(elemento.value)
+}
